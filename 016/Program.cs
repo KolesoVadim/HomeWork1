@@ -1,6 +1,6 @@
 ﻿// Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь.
 Console.Write("Введите числа через запятую: ");
-int[] numbers = StringToNum(Console.ReadLine());
+int[] numbers = StringToNum(Console.ReadLine()??"0");
 PrintArray(numbers);
 int sum = 0;
 for (int i = 0; i < numbers.Length; i++)
